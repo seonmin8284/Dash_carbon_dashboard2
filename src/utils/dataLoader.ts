@@ -1,5 +1,7 @@
 import Papa from 'papaparse';
 
+import { EmissionData, MarketData, AllocationData } from "../types";
+
 export const loadEmissionsData = async (): Promise<EmissionData[]> => {
   try {
     // 실제 환경에서는 API 호출 또는 파일 로드
@@ -37,6 +39,9 @@ export const loadMarketData = async (): Promise<MarketData[]> => {
         일자: new Date(d),
         종목명: 'KAU24',
         시가: basePrice + (Math.random() - 0.5) * 400,
+        고가: basePrice + (Math.random() - 0.5) * 600,
+        저가: basePrice + (Math.random() - 0.5) * 600,
+        종가: basePrice + (Math.random() - 0.5) * 400,
         거래량: Math.floor(Math.random() * 9000) + 1000,
         거래대금: Math.floor(Math.random() * 90000000) + 10000000,
         연도: d.getFullYear(),
