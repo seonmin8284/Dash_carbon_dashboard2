@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import { Trophy } from "lucide-react";
 import { useData } from "../hooks/useData";
-import QuickStats from "../components/QuickStats";
-import MainFeatures from "../components/MainFeatures";
-import ESGSettings from "../components/ESGSettings";
-import ESGRankingCard from "../components/ESGRankingCard";
-import EmergencyAlerts from "../components/EmergencyAlerts";
-import { SidebarContext } from "../components/Layout";
+import QuickStats from "../components/QuickStats.tsx";
+import MainFeatures from "../components/MainFeatures.tsx";
+import ESGSettings from "../components/ESGSettings.tsx";
+import ESGRankingCard from "../components/ESGRankingCard.tsx";
+import EmergencyAlerts from "../components/EmergencyAlerts.tsx";
+import { SidebarContext } from "../components/Layout.tsx";
 
 interface CompanyRanking {
   rank: number;

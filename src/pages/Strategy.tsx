@@ -14,10 +14,10 @@ import {
   ShoppingCart,
   LineChart,
 } from "lucide-react";
-import Backtesting from "../components/Backtesting";
-import TimingChart from "../components/TimingChart";
-import ROIChart from "../components/ROIChart";
-import MarketChart from "../components/MarketChart";
+import Backtesting from "../components/Backtesting.tsx";
+import TimingChart from "../components/TimingChart.tsx";
+import ROIChart from "../components/ROIChart.tsx";
+import MarketChart from "../components/MarketChart.tsx";
 import {
   EmissionData,
   MarketData,

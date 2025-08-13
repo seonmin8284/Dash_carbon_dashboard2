@@ -15,10 +15,10 @@ import {
   MapPin,
   Globe,
 } from "lucide-react";
-import EmissionsChart from "../components/EmissionsChart";
-import MarketChart from "../components/MarketChart";
-import GaugeCharts from "../components/GaugeCharts";
-import EmissionChart from "../components/EmissionChart";
+import EmissionsChart from "../components/EmissionsChart.tsx";
+import MarketChart from "../components/MarketChart.tsx";
+import GaugeCharts from "../components/GaugeCharts.tsx";
+import EmissionChart from "../components/EmissionChart.tsx";
 
 const Dashboard: React.FC = () => {
   // 오류 상태 관리
