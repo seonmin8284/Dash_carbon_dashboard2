@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import ESGRankingTable from "./ESGRankingTable.tsx";
-import CompanyStats from "./CompanyStats.tsx";
+import ESGRankingTable from "./ESGRankingTable";
+import CompanyStats from "./CompanyStats";
 
 interface CompanyRanking {
   rank: number;

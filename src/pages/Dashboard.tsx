@@ -15,10 +15,10 @@ import {
   MapPin,
   Globe,
 } from "lucide-react";
-import EmissionsChart from "../components/EmissionsChart.tsx";
-import MarketChart from "../components/MarketChart.tsx";
-import GaugeCharts from "../components/GaugeCharts.tsx";
-import EmissionChart from "../components/EmissionChart.tsx";
+import EmissionsChart from "../components/EmissionsChart";
+import MarketChart from "../components/MarketChart";
+import GaugeCharts from "../components/GaugeCharts";
+import EmissionChart from "../components/EmissionChart";
 
 const Dashboard: React.FC = () => {
   // 오류 상태 관리
@@ -620,7 +620,7 @@ const Dashboard: React.FC = () => {
           }).addTo(map);
 
           // 마커 클릭 이벤트
-          marker.on("click", (e) => {
+          marker.on("click", (e: any) => {
             e.originalEvent.stopPropagation();
             console.log("마커 클릭됨:", region.지역명);
             setSelectedRegion(region);
@@ -661,7 +661,7 @@ const Dashboard: React.FC = () => {
           <div class="text-center">
             <div class="text-red-500 text-4xl mb-2">⚠️</div>
             <p class="text-gray-600">지도 로딩에 실패했습니다</p>
-            <p class="text-sm text-gray-500 mt-2">${error.message}</p>
+            <p class="text-sm text-gray-500 mt-2">${(error as any).message}</p>
           </div>
         </div>
       `;

@@ -12,7 +12,7 @@ import {
   Zap,
 } from "lucide-react";
 import { useData } from "../hooks/useData";
-import { SidebarContext } from "../components/Layout.tsx";
+import { SidebarContext } from "../components/Layout";
 
 interface StrategyScenario {
   id: string;
