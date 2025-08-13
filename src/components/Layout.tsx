@@ -11,7 +11,7 @@ import {
   Target,
   ChevronDown,
 } from "lucide-react";
-import ChatInterface from "./ChatInterface";
+import ChatInterface from "./ChatInterface.tsx";
 import { ChatMessage } from "../types";
 
 interface LayoutProps {
